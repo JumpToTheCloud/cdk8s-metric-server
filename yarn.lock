@@ -1617,10 +1617,10 @@ cdk8s-plus-28@^2.5.6:
   dependencies:
     minimatch "^3.1.2"
 
-cdk8s-plus-30@^2.4.10:
-  version "2.4.10"
-  resolved "https://registry.yarnpkg.com/cdk8s-plus-30/-/cdk8s-plus-30-2.4.10.tgz#50176c63b106fe480f37b7faa4b9f89a7b3db924"
-  integrity sha512-CUNarh4vzNYcyDDMhfPHbp0TSgIWo2krupm279B9ZLZSGQAt3Om6xT6ubTykhQMFKJ7nxc7qGWgTqGsd8D8b2g==
+cdk8s-plus-32@^2.5.20:
+  version "2.5.20"
+  resolved "https://registry.yarnpkg.com/cdk8s-plus-32/-/cdk8s-plus-32-2.5.20.tgz#13815bc62fb23851a841889fe9c7c02c2e8b7ab1"
+  integrity sha512-vtUBComY48voZjl7fSadNmFOKieOk+EtB/NBdYv0P2qVgQcoQHqoUuS9TG9Ppa3spLyqNfSntk6Z1ZpN7XD9Ug==
   dependencies:
     minimatch "^9.0.5"
 
