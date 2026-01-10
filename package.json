@@ -1,5 +1,5 @@
 {
-  "name": "cdk8s-metric-server",
+  "name": "@jttc/cdk8s-metric-server",
   "repository": {
     "type": "git",
     "url": "git@github.com:JumpToTheCloud/cdk8s-metric-server.git"
@@ -9,6 +9,7 @@
     "bump": "npx projen bump",
     "cdk8s": "npx projen cdk8s",
     "cdk8s:import": "npx projen cdk8s:import",
+    "cdk8s:synth": "npx projen cdk8s:synth",
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "npx projen compile",
@@ -31,7 +32,7 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "Antonio Márquez Pérez",
+    "name": "Jump To The Cloud",
     "email": "antonio.marquez@jumptothecloud.tech",
     "organization": false
   },
@@ -64,11 +65,12 @@
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.1.0",
+    "cdk8s": "^2.70.42",
     "constructs": "^10.0.5"
   },
   "dependencies": {
     "cdk8s": "^2.70.42",
-    "cdk8s-plus-30": "^2.4.10",
+    "cdk8s-plus-32": "^2.5.20",
     "constructs": "^10.4.2"
   },
   "keywords": [
@@ -82,6 +84,7 @@
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",
+    "verbose": true,
     "testMatch": [
       "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
       "<rootDir>/@(src|test)/**/__tests__/**/*.ts?(x)",
