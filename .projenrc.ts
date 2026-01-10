@@ -2,7 +2,7 @@ import { Cdk8sLibrary, K8sVersion } from '@jttc/projen-project-types';
 import { ReleasableCommits } from 'projen';
 import { GithubCredentials } from 'projen/lib/github';
 import { AppPermission } from 'projen/lib/github/workflows-model';
-import { UpgradeDependenciesSchedule } from 'projen/lib/javascript';
+import { NpmAccess, UpgradeDependenciesSchedule } from 'projen/lib/javascript';
 import { ReleaseTrigger } from 'projen/lib/release';
 const project = new Cdk8sLibrary({
   author: 'Jump To The Cloud',
@@ -20,6 +20,7 @@ const project = new Cdk8sLibrary({
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   packageName: '@jttc/cdk8s-metric-server',
   peerDeps: ['cdk8s'],
+  npmAccess: NpmAccess.PUBLIC,
   autoApproveUpgrades: true,
   autoApproveOptions: {
     allowedUsernames: ['github-actions[bot]'],
