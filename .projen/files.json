@@ -1,5 +1,7 @@
 {
   "files": [
+    ".cz-config.js",
+    ".czrc",
     ".eslintrc.json",
     ".gitattributes",
     ".github/pull_request_template.md",

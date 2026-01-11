@@ -108,6 +108,17 @@
       ],
       "condition": "git diff --exit-code > /dev/null"
     },
+    "commit": {
+      "name": "commit",
+      "description": "Commit changes with conventional commits prompts provided by Commitizen",
+      "steps": [
+        {
+          "exec": "./node_modules/cz-customizable/standalone.js",
+          "receiveArgs": false,
+          "say": "committing changes"
+        }
+      ]
+    },
     "compat": {
       "name": "compat",
       "description": "Perform API compatibility check against latest version",
@@ -311,13 +322,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@jttc/projen-project-types,@types/jest,@types/node,cdk8s-cli,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,jest,jsii-diff,jsii-pacmak,prettier,projen,ts-jest,ts-node,typescript,cdk8s,cdk8s-plus-32"
+          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@jttc/projen-project-types,@types/jest,@types/node,cdk8s-cli,commitizen,cz-customizable,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,jest,jsii-diff,jsii-pacmak,prettier,projen,ts-jest,ts-node,typescript,cdk8s,cdk8s-plus-32"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @jttc/projen-project-types @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s-cli commit-and-tag-version eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii prettier projen ts-jest ts-node typescript aws-cdk-lib cdk8s constructs cdk8s-plus-32"
+          "exec": "yarn upgrade @jttc/projen-project-types @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s-cli commit-and-tag-version commitizen cz-customizable eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii prettier projen ts-jest ts-node typescript aws-cdk-lib cdk8s constructs cdk8s-plus-32"
         },
         {
           "exec": "npx projen"
