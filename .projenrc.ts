@@ -19,7 +19,6 @@ const project = new Cdk8sLibrary({
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   packageName: '@jttc/cdk8s-metric-server',
-  peerDeps: ['cdk8s'],
   npmAccess: NpmAccess.PUBLIC,
   autoApproveUpgrades: true,
   autoApproveOptions: {
@@ -66,4 +65,6 @@ const project = new Cdk8sLibrary({
     },
   },
 });
+
+project.commitzent?.addScope({ name: 'cdk8s-metric-server' });
 project.synth();

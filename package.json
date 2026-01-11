@@ -11,6 +11,7 @@
     "cdk8s:import": "npx projen cdk8s:import",
     "cdk8s:synth": "npx projen cdk8s:synth",
     "clobber": "npx projen clobber",
+    "commit": "npx projen commit",
     "compat": "npx projen compat",
     "compile": "npx projen compile",
     "default": "npx projen default",
@@ -37,7 +38,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@jttc/projen-project-types": "^1.0.0-beta.6",
+    "@jttc/projen-project-types": "^1.0.0-beta.7",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.0.6",
     "@typescript-eslint/eslint-plugin": "^8",
@@ -45,6 +46,8 @@
     "aws-cdk-lib": "2.1.0",
     "cdk8s-cli": "^2.203.15",
     "commit-and-tag-version": "^12",
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.5.1",
     "eslint": "^9",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",

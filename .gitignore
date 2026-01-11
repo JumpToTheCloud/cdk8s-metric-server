@@ -55,4 +55,6 @@ tsconfig.json
 !/cdk8s.yaml
 !/.vscode/settings.json
 !/.vscode/extensions.json
+!/.czrc
 !/.projenrc.ts
+!/.cz-config.js
