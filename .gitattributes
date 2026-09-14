@@ -23,6 +23,7 @@
 /.projen/tasks.json linguist-generated
 /.vscode/extensions.json linguist-generated linguist-language=JSON-with-Comments
 /.vscode/settings.json linguist-generated
+/AGENTS.md linguist-generated
 /API.md linguist-generated
 /cdk8s.yaml linguist-generated
 /LICENSE linguist-generated
